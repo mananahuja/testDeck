@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test deck</title>
+  <title>Fun with Probability Distributions App</title>
   <meta charset="utf-8">
-  <meta name="description" content="Test deck">
-  <meta name="author" content="">
+  <meta name="description" content="Fun with Probability Distributions App">
+  <meta name="author" content="Manan Ahuja">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -32,9 +32,9 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Test deck</h1>
-    <h2></h2>
-    <p><br/></p>
+    <h1>Fun with Probability Distributions App</h1>
+    <h2>For Coursera Developing Data Products MOOC</h2>
+    <p>Manan Ahuja<br/>June 2014</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,13 +43,13 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Why this App?</h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+<li>To explain probability distributions to beginners</li>
+<li>In a dynamic way (not with static bookish charts)</li>
+<li>Marry Math and Technology</li>
 </ol>
 
   </article>
@@ -58,10 +58,41 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>What the App does?</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">plot(1:10, 1:10)
+    <ul>
+<li>Allows users to:</li>
+<li>Change number of sample observations to draw</li>
+<li>Change type of probability distribution to draw from</li>
+<li>Change mean from the standard (zero mean)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How the App does it? [1/2]</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Uses inbuilt statistical libraries in R</li>
+<li>Uses plot function together with user&#39;s inputs</li>
+<li>e.g. for plotting Log Normal distribution of 100 observations with mean = 5, it runs the code (of course using the inputs in forms of user inputs instead of the hard code shown on next slide):</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>How the App does it? [2/2]</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">hist(rlnorm(100, mean = 5), main = paste(&quot;100 observations from Log Normal distribution with mean 5&quot;))
 </code></pre>
 
 <p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
@@ -76,14 +107,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Why this App?'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='What the App does?'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How the App does it? [1/2]'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How the App does it? [2/2]'>
+         4
       </a>
     </li>
   </ul>
